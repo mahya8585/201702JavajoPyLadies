@@ -28,17 +28,17 @@ submit
 
 ## API keyの取得
 
-- Azure上で、APIの利用契約を行います。サンプルではAzureの手順書を記載しますが、BluemixやGCP、AWSなどを利用していただいても構いません。
+- Azure上で、APIの利用契約を行います。サンプルではAzureの手順書を記載しますが、BluemixやGCP、AWSなどを利用していただいても構いません。    
 新規作成
 ![新規作成](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure1.png)
 CognitiveServices を選択
-![cognitive servicesを選択](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure2.png)
+![cognitive servicesを選択](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure2.png)    
 account名などの情報を適当に入力。APIはサンプルではComputerVisionAPIを使用しますが、できる人は他のAPIでも構いません。料金プランはF0の無料プランを選びましょう。最後に「ダッシュボードにぴんどめする」にチェックをわすれずに。
-![情報入力](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure3.png)
-ダッシュボードに以下のようなパネルがでてきたら作成完了。パネルをクリックしてください。
-![作成完了](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure4.png)
-メニューから「keys」を選択し、API keyを取得します。
-![メモっておいてね](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure5.png)
+![情報入力](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure3.png)    
+ダッシュボードに以下のようなパネルがでてきたら作成完了。パネルをクリックしてください。    
+![作成完了](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure4.png)    
+メニューから「keys」を選択し、API keyを取得します。    
+![メモっておいてね](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/azure5.png)    
 
 
 ## コード追加手順書
@@ -59,7 +59,8 @@ TODOで書くべき処理がメモされていますので、処理を追記し�
 TODOで書くべき処理がメモされていますので、処理を追記してください。
 
 - src/main/java/com/javajo/azure/example/helper/AzureComputerVisionHelper.javaのanalyzeImageメソッドの中を修正しましょう。
-TODOで書くべき処理がメモされていますので、処理を追記してください。
+TODOで書くべき処理がメモされていますので、処理を追記してください。    
+    
 dtoには今回表示に必要な項目のみ設定しています。その他の返却値を使用したい場合は適宜dtoを追加してください。
 
 
