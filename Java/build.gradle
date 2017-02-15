@@ -44,11 +44,9 @@ dependencies {
 	compile ('org.springframework.boot:spring-boot-starter-web')
     compile ('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile ('org.projectlombok:lombok')
-	compile ('org.apache.httpcomponents:httpclient')
-	compile ('commons-io:commons-io:2.5')
-	compile ('com.google.code.gson:gson')
-
-	providedRuntime ('org.springframework.boot:spring-boot-starter-tomcat')
+	//TODO httpclientを追加する (https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient)
+	//TODO commons-ioを追加する (https://mvnrepository.com/artifact/commons-io/commons-io)
+	//TODO gsonを追加する (https://mvnrepository.com/artifact/com.google.code.gson/gson)
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
