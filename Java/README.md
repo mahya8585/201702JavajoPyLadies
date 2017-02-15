@@ -7,6 +7,10 @@
         - アダルト判定処理
 
 正しく動くと以下のようなアプリが動きます。
+http://localhost:8080/
+![初期画面](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/demo1.png)
+submit
+![結果画面](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Java/readmeImage/demo2.png)
 
 
 画像はネット上に落ちているURLを張り付けてください。ローカルからアップロードしてみたい人はぜひ作ってみてね。
