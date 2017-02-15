@@ -5,7 +5,6 @@ import com.javajo.azure.example.dto.computerVision.Adult;
 import com.javajo.azure.example.dto.computerVision.AnalyzeImage;
 import com.javajo.azure.example.helper.AzureComputerVisionHelper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.Model;
 
@@ -33,9 +32,11 @@ public class AdultJudgmentService {
      */
     public AnalyzeImage detectAdult(String targetImageUrl) throws IOException, URISyntaxException {
         List<AzureComputerVisionHelper.VisualFeature> visualFeatures = new ArrayList<>();
-        visualFeatures.add(AzureComputerVisionHelper.VisualFeature.ADULT);
+        //TODO 実行したいVisualFeatureタイプをListで設定してください
 
-        return azureComputerVisionHelper.analyzeImage(targetImageUrl, AzureComputerVisionHelper.Language.EN, visualFeatures);
+        //TODO azureComputerVisionHelper.analyzeImageメソッドを呼び出し、analyzeImageメソッドの返却値をreturnしてください
+        // 今はエラーが出ないように空のAnalyzeImageを返却していますが、このコードは削除してかまいません。↑の処理をreturnしてください
+        return new AnalyzeImage();
     }
 
     /**
