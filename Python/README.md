@@ -51,10 +51,14 @@ account名などの情報を適当に入力。APIはサンプルではEmotionAPI
 
 ## コード追加手順
 
+- requirements.txtに記載されているライブラリを使用するPython(pyenv etc.)にインストールしてください
+
+- APIを実行する処理を書きます。
+  - app/service/cognitive.py の `get_emotion_score` def を参照してください。
+  TODOコメントで実装するべき処理が記載されているのでしたがって処理を作成してください。 
 
 
-https://github.com/mahya8585/emotionAPI/blob/master/anniversaryImage/service/cognitive.py#L8    
-cognitive.pyの中のAPI KEYを書き換えてください。
+完成したら他のAPIの呼び出しをしてみたり、返却された感情数値を使った判定部分の処理を変更してみたりしてみてください
 
 
 

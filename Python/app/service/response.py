@@ -18,4 +18,3 @@ def convert_from_intarray(int_array):
     """
     str_array = map(str, int_array)
     return u"[" + u",".join(str_array) + u"]"
-

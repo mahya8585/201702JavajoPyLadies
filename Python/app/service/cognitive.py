@@ -1,13 +1,6 @@
 #!/usr/bin/env python
 
-import requests
-import json
-
-EMOTION_URL = "[API URL]"
-HEADER = {
-    "Ocp-Apim-Subscription-Key": "[your api key]",
-    "Content-Type": "application/json"
-}
+# 感情足し上げ処理＆表示側データ受け渡し用dictionary
 emotions = {
     "anger": 0,
     "contempt": 0,
@@ -19,11 +12,16 @@ emotions = {
     "surprise": 0
 }
 
+"""
+    本サービスは run_emotion_check を使用することで
+    感情データを取得し、感情の足し上げ計算を行うところまで実行してくれるよう作ってあります
+"""
+
 
 def run_emotion_check(target_file_path):
     """
     感情判定実行メソッド
-    :param: target_file アップロードした画像のパス
+    :param: target_file 画像のパス
     :return: emotion_name
     """
     # 感情データを取得
@@ -42,13 +40,17 @@ def get_emotion_score(target_file_path):
     :param: target_file アップロードした画像のパス
     :return: 感情情報JSON
     """
-    post_body = {
-        "url": target_file_path
-    }
-    result = requests.post(EMOTION_URL, headers=HEADER, data=json.dumps(post_body))
-    print(result)
 
-    return result.json()
+    # TODO post bodyを作成してください。
+
+    # TODO API リクエスト header 情報を作成してください。
+
+    # TODO requestsライブラリを使ってAPIを実行してください。
+
+    # TODO Emotion APIから返却されたデータを.json()加工して返却してください
+    # e.g.) return result.json()
+
+    return ""
 
 
 def get_emotion(emotion_json):
@@ -82,5 +84,3 @@ def get_no1_emotion_name(target_scores):
     :return: 感情名
     """
     return max(target_scores, key=(lambda x: target_scores[x]))
-
-
