@@ -3,9 +3,9 @@
 import requests
 import json
 
-EMOTION_URL = "https://api.projectoxford.ai/emotion/v1.0/recognize"
+EMOTION_URL = "[API URL]"
 HEADER = {
-    "Ocp-Apim-Subscription-Key": "【your subscription key】",
+    "Ocp-Apim-Subscription-Key": "[your api key]",
     "Content-Type": "application/json"
 }
 emotions = {
