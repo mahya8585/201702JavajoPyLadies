@@ -8,9 +8,9 @@
 
 正しく動くと以下のようなアプリが動きます。    
 http://localhost:8888/    
-![初期画面]()    
+![初期画面](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Python/readmeImage/demo1.png)    
 submit    
-![結果画面]()    
+![結果画面](https://github.com/mahya8585/201702JavajoPyLadies/blob/master/Python/readmeImage/demo2.png)      
 
 - endpoint
     - /    
